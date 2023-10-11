@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #94BECF;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+h1 {
+  color: #ff69b4;
+  background-color: #88B6C9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+}
+
+img {
+  width: 500px;
+  height: 350px;
+  margin-top: 20px;
+}
+
+/* Estilo para o coração no título */
+h1::after {
+  content: ' ❤️';
+  color: #ff69b4;
+}
+
+.content-coracao {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin: 50px auto;
+  -webkit-animation: pulsa 1s linear 0s infinite;
+}
+
+@keyframes pulsa {
+  0% {
+    transform: scale(0.9) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  70% {
+    transform: scale(1.1) rotate(0deg);
+  }
+
+  80% {
+    transform: scale(1.2) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.square {
+  transform: rotate(45deg);
+  width: 50px;
+  height: 50px;
+  background: #e71940;
+  position: absolute;
+  top: 30px;
+}
+
+.circle:after,
+.circle:before {
+  content: "";
+  position: absolute;
+  width: 54px;
+  height: 55px;
+  border-radius: 50%;
+  background: #e71940;
+}
+
+.circle:after {
+  left: 5px;
+  top: 6px;
+}
+
+.circle:before {
+  right: 5px;
+  top: 6px;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  border: 90px;
+  text-align: center;
+  border-radius: 12px;
+  width: 150px;
+  /* Defina a largura desejada */
+  height: 40px;
+  /* Defina a altura desejada */
+  font-size: 20px;
+  /* Altere o tamanho do texto dentro do botão conforme necessário */
+  background-color: #ff69b4;
+  /* Altere a cor de fundo do botão conforme desejado */
+  color: #fff;
+  /* Altere a cor do texto do botão conforme desejado */
+  border: none;
+  /* Remova a borda do botão, se desejar um botão sem borda */
+  border-radius: 10px;
+  /* Adicione bordas arredondadas ao botão */
+}
+audio {
+  width: 90%; /* Use porcentagem para tornar o elemento de áudio responsivo */
+  max-width: 500px; /* Defina o tamanho máximo do elemento de áudio */
+  margin-top: 8vh; /* Use unidades de viewport para posição vertical responsiva */
+}
