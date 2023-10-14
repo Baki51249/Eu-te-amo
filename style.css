@@ -122,6 +122,6 @@ button {
 audio {
   width: 90%; /* Use porcentagem para tornar o elemento de áudio responsivo */
   max-width: 500px; /* Defina o tamanho máximo do elemento de áudio */
-  margin-top: 8vh; /* Use unidades de viewport para posição vertical responsiva */
+  margin-top: 8px; /* Use unidades de viewport para posição vertical responsiva */
 padding-BOTTOM: 60PX;
 }
